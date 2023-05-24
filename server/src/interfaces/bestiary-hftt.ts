@@ -1,0 +1,37 @@
+export interface bestiary_hftt {
+  name: string;
+  source: string;
+  page: number;
+  size: string[];
+  type: string;
+  alignment: string[];
+  ac: object[];
+  hp: object;
+  speed: object;
+  str: number;
+  dex: number;
+  con: number;
+  int: number;
+  wis: number;
+  cha: number;
+  skill: object;
+  senses: string[];
+  passive: number;
+  cr: string;
+  trait?: object[];
+  action: object[];
+  traitTags?: string[];
+  senseTags: string[];
+  actionTags: string[];
+  damageTags: string[];
+  miscTags: string[];
+  hasToken: boolean;
+  hasFluff: boolean;
+  hasFluffImages: boolean;
+  otherSources?: object[];
+  immune?: string[];
+  conditionImmune?: string[];
+  legendaryActions?: number;
+  legendary?: object[];
+  conditionInflict?: string[];
+}

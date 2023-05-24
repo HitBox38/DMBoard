@@ -1,0 +1,35 @@
+export interface bestiary_ua_2022wotm {
+  name: string;
+  source: string;
+  page: number;
+  size: string[];
+  type: string;
+  ac: object[];
+  hp: object;
+  speed: object;
+  str: number;
+  dex: number;
+  con: number;
+  int: number;
+  wis: number;
+  cha: number;
+  senses?: string[];
+  passive: number;
+  immune?: string[];
+  conditionImmune: string[];
+  languages: string[];
+  pbNote: string;
+  trait?: object[];
+  action: object[];
+  traitTags?: string[];
+  senseTags?: string[];
+  actionTags: string[];
+  damageTags: string[];
+  miscTags: string[];
+  conditionInflict: string[];
+  hasToken: boolean;
+  save?: object;
+  resist?: string[];
+  bonus?: object[];
+  languageTags?: string[];
+}

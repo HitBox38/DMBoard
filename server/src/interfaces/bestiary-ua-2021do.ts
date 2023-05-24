@@ -1,0 +1,32 @@
+export interface bestiary_ua_2021do {
+  name: string;
+  source: string;
+  page: number;
+  summonedBySpell: string;
+  summonedBySpellLevel: number;
+  size: string[];
+  type: string;
+  ac: object[];
+  hp: object;
+  speed: object;
+  str: number;
+  dex: number;
+  con: number;
+  int: number;
+  wis: number;
+  cha: number;
+  senses: string[];
+  passive: number;
+  resist: object[];
+  conditionImmune: string[];
+  languages: string[];
+  pbNote: string;
+  trait: object[];
+  action: object[];
+  senseTags: string[];
+  actionTags: string[];
+  languageTags: string[];
+  damageTags: string[];
+  miscTags: string[];
+  hasToken: boolean;
+}

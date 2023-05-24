@@ -1,0 +1,35 @@
+export interface bestiary_ps_k {
+  name: string;
+  source: string;
+  page: number;
+  _copy?: object;
+  hasToken: boolean;
+  hasFluff: boolean;
+  hasFluffImages: boolean;
+  languages?: object;
+  size?: string[];
+  type?: string;
+  alignment?: string[];
+  ac?: number[];
+  hp?: object;
+  speed?: object;
+  str?: number;
+  dex?: number;
+  con?: number;
+  int?: number;
+  wis?: number;
+  cha?: number;
+  senses?: string[];
+  passive?: number;
+  cr?: string;
+  trait?: object[];
+  action?: object[];
+  senseTags?: string[];
+  damageTags?: string[];
+  miscTags?: string[];
+  immune?: string[];
+  conditionImmune?: string[];
+  save?: object;
+  actionTags?: string[];
+  conditionInflict?: string[];
+}

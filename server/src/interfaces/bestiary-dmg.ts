@@ -1,0 +1,35 @@
+export interface bestiary_dmg {
+  name: string;
+  source: string;
+  page: number;
+  srd?: boolean;
+  otherSources?: object[];
+  size: string[];
+  type: string;
+  alignment: string[];
+  ac: number[];
+  hp: object;
+  speed: object;
+  str: number;
+  dex: number;
+  con: number;
+  int: number;
+  wis: number;
+  cha: number;
+  senses?: string[];
+  passive: number;
+  immune?: string[];
+  conditionImmune?: string[];
+  languages?: string[];
+  trait?: object[];
+  action?: object[];
+  traitTags?: string[];
+  senseTags?: string[];
+  languageTags?: string[];
+  damageTags?: string[];
+  hasToken: boolean;
+  hasFluff?: boolean;
+  hasFluffImages?: boolean;
+  cr?: string;
+  miscTags?: string[];
+}

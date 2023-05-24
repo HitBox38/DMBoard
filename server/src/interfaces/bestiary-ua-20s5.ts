@@ -1,0 +1,30 @@
+export interface bestiary_ua_20s5 {
+  name: string;
+  source: string;
+  page: number;
+  summonedByClass: string;
+  size: string[];
+  type: string;
+  ac: object[];
+  hp: object;
+  speed: object;
+  str: number;
+  dex: number;
+  con: number;
+  int: number;
+  wis: number;
+  cha: number;
+  save: object;
+  senses: string[];
+  passive: number;
+  immune: object[];
+  languages: string[];
+  trait: object[];
+  action: object[];
+  reaction: object[];
+  senseTags: string[];
+  languageTags: string[];
+  damageTags: string[];
+  miscTags: string[];
+  hasToken: boolean;
+}

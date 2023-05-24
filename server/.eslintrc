@@ -1,0 +1,37 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "mongo": true,
+    "es2021": true
+  },
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "modules": true,
+      "arrowFunctions": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "camelcase": "error",
+    "spaced-comment": "error",
+    "quotes": ["warn", "double"],
+    "no-duplicate-imports": "error",
+    "eqeqeq": "warn"
+  },
+  "settings": {
+    "import/reslover": {
+      "typescript": {}
+    }
+  }
+}

@@ -1,0 +1,31 @@
+export interface bestiary_hol {
+  name: string;
+  source: string;
+  page: number;
+  size: string[];
+  type: string;
+  ac: number[];
+  hp: object;
+  speed: object;
+  str: number;
+  dex: number;
+  con: number;
+  int: number;
+  wis: number;
+  cha: number;
+  save: object;
+  skill: object;
+  passive: number;
+  languages: string[];
+  pbNote: string;
+  spellcasting?: object[];
+  action: object[];
+  languageTags: string[];
+  damageTags: string[];
+  damageTagsSpell?: string[];
+  spellcastingTags?: string[];
+  miscTags: string[];
+  conditionInflictSpell?: string[];
+  hasToken: boolean;
+  bonus?: object[];
+}

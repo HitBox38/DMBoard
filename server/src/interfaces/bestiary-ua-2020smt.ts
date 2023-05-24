@@ -1,0 +1,35 @@
+export interface bestiary_ua_2020smt {
+  name: string;
+  source: string;
+  page: number;
+  summonedBySpell: string;
+  summonedBySpellLevel: number;
+  size: string[];
+  type: string;
+  alignment: string[];
+  ac: object[];
+  hp: object;
+  speed: object;
+  str: number;
+  dex: number;
+  con: number;
+  int: number;
+  wis: number;
+  cha: number;
+  senses: string[];
+  passive: number;
+  immune?: string[];
+  languages: string[];
+  trait?: object[];
+  action: object[];
+  traitTags?: string[];
+  senseTags: string[];
+  actionTags: string[];
+  languageTags?: string[];
+  damageTags: string[];
+  miscTags: string[];
+  hasToken: boolean;
+  resist?: string[];
+  conditionImmune?: string[];
+  conditionInflict?: string[];
+}

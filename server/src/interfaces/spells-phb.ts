@@ -1,0 +1,30 @@
+export interface spells_phb {
+  name: string;
+  source: string;
+  page: number;
+  srd?: boolean;
+  basicRules?: boolean;
+  level: number;
+  school: string;
+  time: object[];
+  range: object;
+  components: object;
+  duration: object[];
+  entries: string[];
+  scalingLevelDice?: object;
+  damageInflict?: string[];
+  savingThrow?: string[];
+  miscTags?: string[];
+  areaTags?: string[];
+  entriesHigherLevel?: object[];
+  meta?: object;
+  conditionInflict?: string[];
+  affectsCreatureType?: string[];
+  damageResist?: string[];
+  hasFluffImages?: boolean;
+  spellAttack?: string[];
+  abilityCheck?: string[];
+  conditionImmune?: string[];
+  damageVulnerable?: string[];
+  damageImmune?: string[];
+}

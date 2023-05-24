@@ -1,0 +1,31 @@
+export interface bestiary_oow {
+  name: string;
+  source: string;
+  page: number;
+  _copy: object;
+  type?: string;
+  immune?: string[];
+  conditionImmune?: string[];
+  hasToken: boolean;
+  hasFluffImages?: boolean;
+  isNpc?: boolean;
+  isNamedCreature?: boolean;
+  ac?: object[];
+  languageTags?: string[];
+  hasFluff?: boolean;
+  shortName?: boolean;
+  alignment?: string[];
+  damageTagsSpell?: string[];
+  spellcastingTags?: string[];
+  trait?: object[];
+  action?: object[];
+  damageTags?: string[];
+  conditionInflict?: string[];
+  miscTags?: string[];
+  int?: number;
+  cha?: number;
+  languages?: string[];
+  size?: string[];
+  speed?: object;
+  senses?: string[];
+}
