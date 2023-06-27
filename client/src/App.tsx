@@ -1,20 +1,17 @@
-import { Flex, Button, Center } from "@chakra-ui/react";
-import { useStore } from "./stores/store";
+import { ThemeProvider } from "@mui/material/styles";
+import { themeStore } from "./stores/themeStore";
+import { Router } from "./components/Router";
+import { Box, CssBaseline } from "@mui/material";
 
-function App() {
-  const count = useStore((state) => state.count);
-  const increment = useStore((state) => state.increment);
+export const App = () => {
+  const theme = themeStore((state) => state.theme);
 
   return (
-    <Flex w={"100vw"} h="100vh" alignItems={"center"} justifyContent={"center"}>
-      {/* <Center h={"100px"}> */}
-      <p>Count: {count}</p>
-      <Button colorScheme="blue" onClick={increment}>
-        Increment
-      </Button>
-      {/* </Center> */}
-    </Flex>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Box height="100vh" maxHeight="100vh">
+        <Router />
+      </Box>
+    </ThemeProvider>
   );
-}
-
-export default App;
+};
